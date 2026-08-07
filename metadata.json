@@ -1,0 +1,6 @@
+{
+  "name": "CyberDialer Pro",
+  "description": "Futuristic Cyber Hacker Android Dialer & Contact Manager with AMOLED Black, Neon accents, Fake Call/Chat, Call Blocker, T9 Search, and custom theme engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
