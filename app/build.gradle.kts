@@ -37,8 +37,9 @@ android {
 
   buildTypes {
     release {
-      isCrunchPngs = false
       isMinifyEnabled = false
+      isShrinkResources = false
+      isCrunchPngs = false
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
       
       val releaseConfig = signingConfigs.findByName("release")
@@ -98,7 +99,6 @@ dependencies {
   implementation(libs.androidx.compose.ui.graphics)
   implementation(libs.androidx.compose.ui.tooling.preview)
   
-  // حلينا تعارض الإصدارات هنا
   implementation("androidx.core:core-ktx:1.15.0")
   
   implementation(libs.androidx.lifecycle.runtime.compose)
@@ -136,3 +136,4 @@ dependencies {
   "ksp"(libs.androidx.room.compiler)
   "ksp"(libs.moshi.kotlin.codegen)
 }
+
